@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-selection {
+    margin-bottom: 30px;
+}
+
+.ticket-selection h2, .summary h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.ticket-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ticket-card {
+    background-color: #e9f7ff;
+    border: 1px solid #cce5ff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-card h3 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.ticket-card .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.quantity-control button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.quantity-control button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-control .quantity {
+    font-size: 1.3em;
+    margin: 0 15px;
+    min-width: 25px; /* Ensures consistent spacing */
+    display: inline-block; /* Aligns text properly */
+    text-align: center;
+}
+
+.summary {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+#order-details p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.total {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #dc3545;
+}
+
+#checkout-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .ticket-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

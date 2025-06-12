@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Ingressos - Cascata Parque Aquático</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cascata Parque Aquático</h1>
+        <p>Compre seus ingressos online e garanta sua diversão!</p>
+    </header>
+
+    <main>
+        <section class="ticket-selection">
+            <h2>Selecione seu Ingresso</h2>
+            <div class="ticket-options">
+                <div class="ticket-card">
+                    <h3>Ingresso Individual</h3>
+                    <p class="price">R$ 80,00</p>
+                    <p>Acesso para 1 pessoa durante o dia todo.</p>
+                    <div class="quantity-control">
+                        <button class="decrease-quantity" data-price="80.00" data-ticket-type="individual">-</button>
+                        <span class="quantity" id="quantity-individual">0</span>
+                        <button class="increase-quantity" data-price="80.00" data-ticket-type="individual">+</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <h3>Ingresso Família (4 Pessoas)</h3>
+                    <p class="price">R$ 280,00</p>
+                    <p>Acesso para 4 pessoas durante o dia todo. Economize!</p>
+                    <div class="quantity-control">
+                        <button class="decrease-quantity" data-price="280.00" data-ticket-type="family">-</button>
+                        <span class="quantity" id="quantity-family">0</span>
+                        <button class="increase-quantity" data-price="280.00" data-ticket-type="family">+</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <h3>Ingresso Infantil (até 12 anos)</h3>
+                    <p class="price">R$ 50,00</p>
+                    <p>Acesso para 1 criança (até 12 anos) durante o dia todo.</p>
+                    <div class="quantity-control">
+                        <button class="decrease-quantity" data-price="50.00" data-ticket-type="child">-</button>
+                        <span class="quantity" id="quantity-child">0</span>
+                        <button class="increase-quantity" data-price="50.00" data-ticket-type="child">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <h2>Resumo do Pedido</h2>
+            <div id="order-details">
+                <p>Nenhum ingresso selecionado.</p>
+            </div>
+            <p class="total">Total: <span id="total-price">R$ 0,00</span></p>
+            <button id="checkout-button">Finalizar Compra (Exemplo)</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cascata Parque Aquático. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
